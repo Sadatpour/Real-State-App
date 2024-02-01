@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+    />
+    <title>Real Estate App - HTML & CSS</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-head">
+        <div class="mobile-header">
+          <img src="./img/paja-logo.png" alt="logo" class="logo" />
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <div class="mobile-filter">
+          <input
+            type="text"
+            placeholder="&#xf002; Search by keywords"
+            style="font-family: Arial, FontAwesome"
+          />
+
+          <button><i class="fas fa-filter"></i>Filters</button>
+        </div>
+      </header>
+
+      <main class="app-content">
+        <nav class="app-desktop-nav">
+          <input
+            type="text"
+            placeholder="&#xf002; Search by location"
+            style="font-family: Arial, FontAwesome"
+          />
+
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active"
+              >News</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">Jobs</a>
+            <a href="#" class="list-group-item list-group-item-action disabled"
+              >Sign in</a
+            >
+          </div>
+          <div class="app-nav-notif">
+            <a href="#"><i class="far fa-bell"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+          </div>
+        </nav>
+        <div class="area-info">
+          <h1 class="location-title">Los Angeles</h1>
+          <p class="location-description">
+            Live like the starts in these luxurious Southern California estates
+          </p>
+        </div>
+
+        <div class="locations">
+          <div class="location">
+            <img src="./img/location1.jfif" alt="location picture" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="location-type">PLUS</span>
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Modern home in city center</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1400
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>34 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location2.jpg" alt="location2" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Isolated house outside of ...</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1250
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>14 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location3.jfif" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Large dream home with ...</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1300
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>22 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location4.jfif" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="location-type">PLUS</span>
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Modern home in city center</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1600
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>34 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="area-info">
+          <h1 class="location-title">Phoenix</h1>
+          <p class="location-description">
+            Escape the cold and enjoy great weather without breaking the bank
+          </p>
+        </div>
+
+        <div class="locations">
+          <div class="location">
+            <img src="./img/location5.jpg" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Large dream home with ...</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1100
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>14 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location6.jfif" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="location-type">PLUS</span>
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Modern home in city center</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1400
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>34 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location7.jpg" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="location-type">PLUS</span>
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Modern home in city center</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1400
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>34 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <img src="./img/location8.jfif" alt="" />
+            <div class="location-info">
+              <div class="location-tags">
+                <span class="beds">3 BEDS</span>
+                <span class="location-type-dot">.</span>
+                <span class="baths">2 BATHS</span>
+              </div>
+              <h2 class="location-info-title">Isolated house outside of ...</h2>
+              <span class="location-info-price">
+                <p>
+                  <span class="price-sign">&</span> 1330
+                  <span class="location-info-time">/wk</span>
+                </p>
+              </span>
+              <div class="location-type-rate">
+                <div class="location-type-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>18 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="app-footer">
+          <span><img src="./img/paja-logo.png" alt="" /></span>
+          <span
+            ><p>
+              Designed by <a href="https://sadatpour.com">Sadatpour</a>
+            </p></span
+          >
+        </footer>
+      </main>
+
+      <aside class="app-sidebar">
+        <div class="app-sidebar-logo">
+          <img src="./img/paja-logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="filter-btn">
+          <button><a href="#">update result</a></button>
+        </div>
+        <div class="app-sidebar-filter">
+          <div class="bedrooms">
+            Bedrooms
+            <button>2 <i class="fa fa-caret-down"></i></button>
+          </div>
+          <div class="bathrooms">
+            Bathrooms
+            <button>2 <i class="fa fa-caret-down"></i></button>
+          </div>
+          <div class="price-range">
+            Price Range
+            <button>Up to $ 2,000 /wk <i class="fa fa-caret-down"></i></button>
+          </div>
+        </div>
+        <div class="app-sidbar-property">
+          Property Type
+          <div class="property-radiobtn">
+            <label class="container"
+              >House
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Apartment
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Loft
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Townhouse
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="sidebar-amenities">
+          Amenities
+          <div class="amenities-checkbox">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  checked
+                />
+                Balcony
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Air conditioning
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Pool
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Beach
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Pet friendly
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Kid friendly
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                  unchecked
+                />
+                Parking
+              </label>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

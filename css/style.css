@@ -1,0 +1,463 @@
+/* CSS Reset Start */
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: Comfortaa;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #aaaaaa;
+}
+/* CSS Reset End  */
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 80vh;
+}
+.app-head {
+  grid-row: auto;
+  background: #1a202c;
+  justify-content: center;
+}
+.app-content {
+  background: #edf2f7;
+}
+.app-content .area-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.app-sidebar {
+  grid-row: 1/-1;
+  background: #020418;
+  color: #fff;
+  display: none;
+}
+.mobile-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+}
+.mobile-header img {
+  width: 200px;
+  height: auto;
+}
+.mobile-header i {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #718096;
+}
+.mobile-filter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d3748;
+  padding: 1rem;
+}
+.mobile-filter button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #718096;
+  border: 0;
+}
+.mobile-filter button i {
+  margin: 0 10px 0 0;
+}
+.mobile-filter input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 65%;
+  background-color: #1a202c;
+  color: #fff;
+  border: 0;
+}
+.mobile-filter input::placeholder {
+  color: #718096;
+}
+
+.locations {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 2rem;
+  position: relative;
+}
+.location {
+  margin: 1rem 0 3rem 0;
+}
+.location-title {
+  margin: 2.5rem 0 0 0;
+  font-size: 1.5rem;
+}
+.location-description {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.2rem;
+}
+
+.location img {
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+}
+.location-info {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0 1rem 0 2rem;
+  border-radius: 10px;
+  margin-top: -6rem;
+  position: absolute;
+}
+.location-tags .location-type {
+  background-color: #b2f5ea;
+  border-radius: 50px;
+  padding: 0.2rem 0.5rem;
+}
+.location-tags {
+  font-size: 0.7rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.location-info-title {
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+.location-info-price {
+  display: inline;
+}
+.location-type-dot {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.location-type-rate .location-type-star i {
+  margin: 1rem 0 0 0;
+  color: #38b2ac;
+}
+.location-type-rate .location-type-star span {
+  margin: 0 0 0 0.5rem;
+  font-size: 0.8rem;
+}
+.app-footer {
+  width: 100%;
+  height: 50px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.app-footer img {
+  width: 150px;
+  height: auto;
+  margin: 0 0 0 0.2rem;
+}
+.app-footer p {
+  display: inline-block;
+  color: #718096;
+  font-size: 0.8rem;
+  text-align: right;
+  margin: 1.3rem 0.5rem 0 2rem;
+}
+.app-footer a {
+  color: #38b2ac;
+  text-decoration: none;
+}
+.app-desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .app-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .app-footer p {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  .app-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    background-color: #2d3748;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .mobile-filter {
+    display: none;
+  }
+  .app-sidebar-logo {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #000;
+    border-bottom: 1px solid #777;
+  }
+  .app-sidebar-logo img {
+    width: 250px;
+    height: auto;
+  }
+
+  .app-sidebar-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #4a5568;
+  }
+  .app-sidebar-filter .price-range {
+    grid-column: 1/-1;
+  }
+  .app-desktop-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #e6e5e5;
+  }
+  .app-desktop-nav i {
+    margin: 0.2rem;
+  }
+  .app-desktop-nav input {
+    padding: 0.4rem 1rem;
+    background-color: #f7f3f3;
+    border: 0;
+    border-radius: 10px;
+  }
+  .app-desktop-nav .list-group a {
+    text-decoration: none;
+    margin: 1rem;
+  }
+  .app-sidebar-filter button {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #4a5568;
+    color: #fff;
+    border: 0;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  .app-sidebar-filter button i {
+    margin: 0 0 0 2rem;
+  }
+  .app-sidebar-filter .bedrooms button {
+    width: 100px;
+  }
+  .app-sidebar-filter .bathrooms button {
+    width: 100px;
+  }
+  .app-sidbar-property {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #4a5568;
+  }
+  .app-sidbar-property .property-radiobtn {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    direction: rtl;
+    text-align: left;
+    gap: 1rem;
+  }
+  .property-radiobtn .container input[type="radio"]:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #667eea;
+  }
+  .sidebar-amenities .amenities-checkbox input[type="checkbox"]:checked:after {
+    width: 13px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: #667eea;
+    color: #fff;
+    content: "\2714";
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #ffffff;
+  }
+
+  .sidebar-amenities {
+    padding: 1.5rem 1rem;
+  }
+  .sidebar-amenities .form-check {
+    margin: 1rem 0;
+  }
+  .filter-btn {
+    color: #ffffff;
+    background-color: #1a202c;
+    padding: 1.5rem 1.3rem;
+  }
+  .filter-btn button {
+    width: 90%;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: #667eea;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+  }
+  .filter-btn button a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .app {
+    grid-template-columns: 300px 1fr;
+  }
+  .locations {
+    margin: 1rem 0.1rem 2rem 0.5rem;
+  }
+}
