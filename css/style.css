@@ -91,7 +91,6 @@ video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  font-family: Comfortaa;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -109,6 +108,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: Comfortaa;
 }
 ol,
 ul {
@@ -363,7 +363,7 @@ table {
     text-decoration: none;
     margin: 1rem;
   }
-  .app-sidebar-filter button {
+  .app-sidebar-filter select  {
     width: 100%;
     height: 50px;
     border-radius: 15px;
@@ -374,14 +374,8 @@ table {
     padding: 0.5rem;
     margin: 1rem 0;
   }
-  .app-sidebar-filter button i {
-    margin: 0 0 0 2rem;
-  }
-  .app-sidebar-filter .bedrooms button {
-    width: 100px;
-  }
-  .app-sidebar-filter .bathrooms button {
-    width: 100px;
+  .app-sidebar-filter .price-range input{
+    font-size: 2rem;
   }
   .app-sidbar-property {
     padding: 1.5rem 1rem;
